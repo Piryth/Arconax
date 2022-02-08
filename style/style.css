@@ -1,7 +1,20 @@
 
+html {
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+    font-family: 'Audiowide', cursive;
+}
+
 body {
-    background-size: 100%;
+    
     background-repeat: no-repeat;
+    background: url(../img/back.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
     background-color: #746BA5;
     margin: 0px;
 }
@@ -11,9 +24,30 @@ body {
     z-index: -1;
     width: 100%;
 }
+
+#landing {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing div:last-child {
+    flex: 1
+}
+
+h1 {
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
  
-#void {
-    height: 30vh;
+.void {
+    height: 25vh;
 }
 
 nav {
@@ -35,84 +69,204 @@ ul li {
 li a {
 
     text-decoration: none;
-    color: wheat;
+    color: whitesmoke;
     font-weight: 600;
 }
 
 #arcologo-wrap {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    align-items: center;
     background: linear-gradient(90deg, rgba(249,103,106,1) 0%, rgba(251,68,26,1) 30%, rgba(255,172,43,1) 91%);
+    border-radius: 50%;
     width: 254px;
     height: 254px;
-    border-radius: 50%;
     box-shadow: 7px 8px 16px 9px rgba(0,0,0,0.57);
 }
 
-#arcologo img {
 
-    position: relative;
-    top: 10px;
-    left: 10px;
+#arcologo-wrap img {
+    z-index: 10;
     border-radius: 50%;
-    /*border: 10px solid #F9676A;*/
-    width: 234px;
-    height: 234px; 
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);
+    width: 94%;
+    height: 94%;
+    box-shadow: inset 0px 0px 12px 2px rgba(0,0,0,0.74);
+    /*box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);*/
 }
 
-#void2 {
-    height: 45vh;
+#arcologo-wrap img:hover {
+    animation: tour 1.2s ease ;
+}
+
+@keyframes tour {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.void2 {
+    height: 50vh;
 }
 
 
 #sectionpremiere {
     display: flex;
-    background: linear-gradient(90deg, rgba(150,116,153,1) 13%, rgba(165,100,104,1) 65%, rgba(188,146,133,1) 94%);
-    justify-content: space-between;
-    padding: 4% 0px 4% 0px;
-    box-shadow: 0px 12px 32px 17px rgba(59,24,8,0.92);
+    margin: 0% 12% 0% 12%;
+    gap: 8%;
 }
 
-h1 {
-    margin-left: 4%;
-    font-size: 2em;
+
+
+#sectionpremiere div:last-child *{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+#track {
+    margin-top: 2%;
+    flex: 1;
+}
+
+#track a {
+    margin-top: 1%;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+hr {
+    color: white;
+}
+
+
+#track a:hover {
+    font-weight: 700;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: 1.7vw;
     color: whitesmoke;
 }
 
-#buttondiscover {
-    align-self: flex-end;
+h3 {
+    color: white;
+    font-size: 2vw;
+    text-align: center;
 }
 
-#buttondiscover a {
+
+
+div div {
+    display: flex;
+    gap: 8%;
+    margin-right: 15%;
+    
+}
+
+.buttondiscover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px black;
+    flex: 1;
+    margin-top: 3%;
+    padding: 1% 1% 1% 1%;
     color: white;
-    font-weight: 600;
     text-decoration: none;
-    margin: auto;
     background-color: black;
-    padding: 24px 32px 24px 32px;
     border-radius: 40px;
     transition: 0.4s ease;
 }
 
-#buttondiscover a:hover {
+.buttondiscover + .buttondiscover{
+    background-color: #1DB954;
+    color: black;
+}
+
+.buttondiscover:hover {
     color: black;
     background-color: whitesmoke;
+    transform: scale(1.02);
+    transition: 0.4s ease;
+
 }
 
-#buttondiscover img {
-    position: relative;
-    top: 10px;
-    left: 8px;
+.buttondiscover + .buttondiscover:hover {
+    background-color: white;
 }
 
-#coruscant { 
-    box-shadow: 26px -13px 26px 6px rgba(0,0,0,0.71);
+
+#coruscant {
+    flex: 1;
+    display: block;
+    box-shadow: 26px -10px 26px 10px rgba(0,0,0,1);
     border-radius: 8px;
     transition: 0.4s ease;
 }
 
 
 #coruscant:hover {
-    transform: scale(1.05);
-    transition: 0.4s ease;
+    transform: rotateY(180deg);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+#scroller {
+    position: fixed;
+    top: 83vh;
+    left: 91%;
+    display: block;
+    padding: 8px;
+    transform: rotate(90deg);
+}
+
+#scroller img {
+    position: relative;
+    top: 6px;
+    opacity: 1;
+}
+
+
+footer {
+    height: 10vh;
+}
+
+@media only screen and (max-width: 980px)  {
+    body {
+        background: url("../img/coruscant_back.jpg");
+        background-size: 100%;
+    }
+
+    #arcologo-wrap {
+        background: linear-gradient(90deg, rgba(102,124,176,1) 0%, rgba(150,141,158,1) 56%, rgba(194,157,141,1) 100%);
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait)  {
+    html {
+        overflow-y: scroll;
+    }
+    body {
+        background: url("../img/back_portrait.jpg");
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+
+    #arcologo-wrap {
+        background: linear-gradient(90deg, rgba(102,124,176,1) 0%, rgba(150,141,158,1) 56%, rgba(194,157,141,1) 100%);
+    }
+    #scroller {
+        display: none;
+    }
+
 }
