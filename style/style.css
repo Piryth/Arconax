@@ -259,7 +259,6 @@ footer {
     body {
         background: url("../img/back_portrait.jpg");
         background-size: 100%;
-        background-attachment: fixed;
     }
 
     #arcologo-wrap {
