@@ -5,6 +5,7 @@ html {
     overflow-y: hidden;
 }
 
+/*#f53a33*/
 * {
     font-family: 'Audiowide', cursive;
 }
@@ -12,7 +13,7 @@ html {
 body {
     
     background-repeat: no-repeat;
-    background: url(../img/back.jpg);
+    background: url(../img/cb/cb_grand.jpg);
     background-attachment: fixed;
     background-size: 100%;
     background-color: #746BA5;
@@ -32,6 +33,7 @@ body {
     gap: 10%;
     justify-content: center;
     align-items: center;
+    margin-top: 5vh;
 }
 
 #landing div:last-child {
@@ -43,6 +45,7 @@ h1 {
     text-align: center;
     font-size: 3em;
     margin-bottom: 0px;
+    color :#33EEF5
 }
 
  
@@ -78,10 +81,9 @@ li a {
     justify-content: center;
     margin-top: 3vh;
     align-items: center;
-    background: linear-gradient(90deg, rgba(249,103,106,1) 0%, rgba(251,68,26,1) 30%, rgba(255,172,43,1) 91%);
-    border-radius: 50%;
-    width: 254px;
-    height: 254px;
+    background: linear-gradient(90deg, rgba(79,31,91,1) 20%, rgba(160,47,99,1) 100%, rgba(255,110,123,1) 100%);     border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
     box-shadow: 7px 8px 16px 9px rgba(0,0,0,0.57);
 }
 
@@ -91,7 +93,7 @@ li a {
     border-radius: 50%;
     width: 94%;
     height: 94%;
-    box-shadow: inset 0px 0px 12px 2px rgba(0,0,0,0.74);
+    box-shadow: inset -5px 5px 12px 2px rgba(0,0,0,0.74);
     /*box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);*/
 }
 
@@ -108,12 +110,13 @@ li a {
 }
 
 .void2 {
-    height: 50vh;
+    height: 150vh;
 }
 
 
 #sectionpremiere {
     display: flex;
+
     margin: 0% 12% 0% 12%;
     gap: 8%;
 }
@@ -153,7 +156,8 @@ hr {
 h2 {
     text-align: center;
     font-size: 1.7vw;
-    color: whitesmoke;
+    color: #0f0f0f;
+    
 }
 
 h3 {
@@ -237,7 +241,12 @@ div div {
 
 
 footer {
-    height: 10vh;
+    height: 20%
+}
+
+canvas {
+    position: absolute;
+
 }
 
 @media only screen and (max-width: 980px)  {
