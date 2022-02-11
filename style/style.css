@@ -117,8 +117,8 @@ li a {
     align-items: center;
     height: 100vh;
     margin: 0% 12% 0% 12%;
-    margin-top: 1000px;
     gap: 8%;
+    margin-top: 1000px;
 }
 
 
@@ -155,14 +155,14 @@ hr {
 
 h2 {
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 1.7em;
     color: #0f0f0f;
     
 }
 
 h3 {
     color: white;
-    font-size: 2vw;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -259,7 +259,7 @@ canvas {
 
 @media only screen and (max-width: 768px) and (orientation: portrait)  {
     html {
-        overflow-y: auto;
+        overflow-y: scroll;
     }
     body {
         background: url("../img/back_portrait.jpg");
@@ -275,5 +275,8 @@ canvas {
     #scroller {
         display: none;
     }
-
+    #sectionpremiere {
+        flex-direction: column;
+        margin-top: 500px;
+    }
 }
