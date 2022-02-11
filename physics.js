@@ -1,4 +1,10 @@
-var Engine = Matter.Engine,
+
+if(!window.matchMedia("only screen and (max-width: 768px) and (orientation: portrait)").matches) {
+    physics();
+}
+
+function physics() {
+    var Engine = Matter.Engine,
 Runner = Matter.Runner,
 Composite = Matter.Composite,
 Render = Matter.Render,
@@ -84,4 +90,7 @@ Render.run(render);
 var runner = Runner.create();
 
 Runner.run(runner, engine);
+
+
+}
 
