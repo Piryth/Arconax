@@ -82,11 +82,9 @@ li a {
     margin-top: 3vh;
     align-items: center;
     background: linear-gradient(90deg, rgba(79,31,91,1) 20%, rgba(160,47,99,1) 100%, rgba(255,110,123,1) 100%);     border-radius: 50%;
-    width: 20vw;
-    height: 20vw;
+    width: 20%;
     box-shadow: 7px 8px 16px 9px rgba(0,0,0,0.57);
 }
-
 
 #arcologo-wrap img {
     z-index: 10;
@@ -116,8 +114,10 @@ li a {
 
 #sectionpremiere {
     display: flex;
-
+    align-items: center;
+    height: 100vh;
     margin: 0% 12% 0% 12%;
+    margin-top: 1000px;
     gap: 8%;
 }
 
@@ -129,8 +129,8 @@ li a {
 
 
 #track {
-    margin-top: 2%;
     flex: 1;
+    margin-bottom: 5%;
 }
 
 #track a {
@@ -240,10 +240,6 @@ div div {
 }
 
 
-footer {
-    height: 20%
-}
-
 canvas {
     position: absolute;
 
@@ -267,11 +263,14 @@ canvas {
     }
     body {
         background: url("../img/back_portrait.jpg");
-        background-size: inherit;
+        background-size: 100%;
+        background-attachment: fixed;
     }
 
     #arcologo-wrap {
         background: linear-gradient(90deg, rgba(102,124,176,1) 0%, rgba(150,141,158,1) 56%, rgba(194,157,141,1) 100%);
+        width: 250px;
+        height: 250px;
     }
     #scroller {
         display: none;
