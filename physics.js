@@ -41,7 +41,7 @@ var circle = Bodies.circle(window.innerWidth/2, window.innerHeight/2, window.inn
 var cover = Bodies.rectangle(window.innerWidth/2-40, -300, 71, 71, {
     render: {
         sprite: {
-            texture: "img/coruscant_ep.jpg",
+            texture: "img/covers/coruscant_ep.jpg",
             xScale: 1/7,
             yScale: 1/7
         }
@@ -51,7 +51,7 @@ var cover = Bodies.rectangle(window.innerWidth/2-40, -300, 71, 71, {
 var cover2 = Bodies.rectangle(window.innerWidth/2+40, -200, 71, 71, {
     render: {
         sprite: {
-            texture: "img/N7.jpg",
+            texture: "img/covers/N7.jpg",
             xScale: 1/7,
             yScale: 1/7
         }
@@ -61,7 +61,7 @@ var cover2 = Bodies.rectangle(window.innerWidth/2+40, -200, 71, 71, {
 var cover3 = Bodies.rectangle(window.innerWidth/4, -500, 71, 71, {
     render: {
         sprite: {
-            texture: "img/great_hunt_ep.png",
+            texture: "img/covers/great_hunt_ep.png",
             xScale: 1/7,
             yScale: 1/7
         }
@@ -72,7 +72,7 @@ var cover3 = Bodies.rectangle(window.innerWidth/4, -500, 71, 71, {
 var cover4 = Bodies.rectangle(window.innerWidth/4-window.innerWidth/8, -100, 71, 71, {
     render: {
         sprite: {
-            texture: "img/indomitable.png",
+            texture: "img/covers/indomitable.png",
             xScale: 1/7,
             yScale: 1/7
         }
