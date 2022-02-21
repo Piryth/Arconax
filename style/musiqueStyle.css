@@ -1,0 +1,123 @@
+
+html {
+    overflow-y: scroll;
+}
+
+main {
+    margin-left: 8%;
+    margin-top: 5%;
+    display: flex;
+}
+
+article {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+
+hgroup {
+    display: flex;
+    height:42vh;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#main {
+    width: 42vh;
+    height: 42vh;
+    border-radius: 8px;
+    box-shadow: 12px 12px 16px black;
+}
+
+aside {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    height: 80vh;
+    background-color: rgba(20, 20, 20,.4);
+    margin-right: 4%;
+    border-radius: 10%;    
+}
+
+aside p {
+    text-align: center;
+}
+
+
+.cover {
+    width : 13vw;
+    height: 13vw;
+    border-radius: 8px;
+}
+
+aside .buttondiscover {
+    align-self: flex-end;
+    margin-right: 16px;
+}
+
+h1, h2, h3 {
+    text-align: left;
+}
+
+p {
+    color: white;
+}
+
+h1, h3 {
+    margin-top: 0px;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #33EEF5, 0 0 30px #33EEF5;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+/* .container {
+    margin: auto;
+    height: 100%;
+    transition: 0.2s ease;
+} */
+
+/* .fleche {
+    position: absolute;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    background-color: aliceblue;
+    
+} */
+
+/* .fleche:hover {
+    cursor: pointer;
+} */
+
+/* #carousel {
+    display: inline-block;
+    max-width: 156px;
+    overflow: hidden;
+    align-self:center;
+}
+
+
+#c1 {
+    transform: rotate(-180deg);
+    top: 55vh;
+    left: 68vw;
+}
+
+#c2 {
+    top:55vh;
+    left: 89vw;
+} */

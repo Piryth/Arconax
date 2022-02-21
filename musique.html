@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/biblioStyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Musiques</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    </style> 
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style> 
+</head>
+<body>
+
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="musique.html">Musiques</a></li>
+            <li><a href="">A propos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Bibliothèque des musiques</h1>
+        <article id="grille">
+
+            <div>
+                <a href="pages_musiques/Aric_Jorgan.html"><img src="img/covers/aric_jorgan.png" alt=""></a>
+                <p>Aric Jorgan</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Torchy.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
+                <p>Torchy</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Dedjarik.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
+                <p>Dedjarik</p>
+            </div>
+            <div>
+                <a href="pages_musiques/L1313.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
+                <p>L.1313</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Corscant Nights.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
+                <p>Coruscant Nights</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Skavak.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
+                <p>Skavak</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Trandoshan Chase.html"><img src="img/covers/great_hunt_ep.png" alt=""></a>
+                <p>Trandoshan Chase</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Track Into the Dark Temple.html"><img src="img/covers/great_hunt_ep.png" alt=""></a>
+                <p>Track into the Dark Temple</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Bounty Hunter.html"><img src="img/covers/great_hunt_ep.png" alt=""></a>
+                <p>Bounty Hunter's Pursuit</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/indomitable.png" alt=""></a>
+                <p>The Indomitable</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/the_preserver.png" alt=""></a>
+                <p>The Preserver</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/N7.jpg" alt=""></a>
+                <p>N7</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Duros Area.html"><img src="img/covers/duros_area.png" alt=""></a>
+                <p>Duros Area</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/2VR8.png" alt=""></a>
+                <p>2V-R8 has Only Good Intentions</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/black_sun.png" alt=""></a>
+                <p>Black Sun</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/maitre_pierre.png" alt=""></a>
+                <p>Le maître de la Pierre</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/khem_val.png" alt=""></a>
+                <p>Khem Val's Hunger</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/minimalthreat.png" alt=""></a>
+                <p>Minimal Threat</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/night_city.png" alt=""></a>
+                <p>Night City Blues</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/night_city.png" alt=""></a>
+                <p>Memories of Green</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/sentry_droid.png" alt=""></a>
+                <p>Sentry Droid</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Spacesalt.html"><img src="img/covers/spacesalt.png" alt=""></a>
+                <p>SpaceSalt</p>
+            </div>
+            <div>
+                <a href=""><img src="img/covers/the_wise.png" alt="">/a>
+                <p>The Wise</p>
+            </div>
+
+
+        </article>
+    </main>
+
+    <script>
+        for(i = 1; i <= 5; i++) {
+            for(j = 1; j <= 5; j++) {
+
+                    var image = document.querySelector("div:nth-child(" + i + ")");
+                    image.style.gridRow = i;
+                    image.style.gridColumn = j;
+            }
+        }
+    </script>
+</body>
+</html>

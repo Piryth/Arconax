@@ -1,0 +1,51 @@
+html {
+    overflow-y: scroll;
+
+}
+
+main {
+    margin-top: 6%;
+}
+
+#grille {
+    display: grid;
+    grid-gap: 5%;
+    margin: 4%;
+}
+
+#grille p {
+    color: white;
+    text-align: center;
+}
+
+div {
+    width: 12vw;
+}
+
+div img {
+    width: 12vw;
+    border-radius: 8px;
+    box-shadow: 8px 8px 12px #020202;
+}
+
+div img a {
+    transition: all 0.2 ease;
+    transform: scale(1);
+}
+
+
+
+div img:hover {
+    transition: all 0.2 ease;
+    transform: scale(1.05);
+}
+
+/* div:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+div:nth-child(2) {
+    grid-row: 1;
+    grid-column: 2;
+} */

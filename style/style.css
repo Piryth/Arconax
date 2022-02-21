@@ -55,6 +55,8 @@ h1 {
 
 nav {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
     width: 100%;
 }
@@ -168,44 +170,45 @@ h3 {
 
 
 
-div div {
-    display: flex;
-    gap: 8%;
-    margin-right: 15%;
-    
-}
 
 .buttondiscover{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 5px 5px 5px black;
-    flex: 1;
+    display: block;
     margin-top: 3%;
     padding: 1% 1% 1% 1%;
-    color: white;
+    width: fit-content;
     text-decoration: none;
-    background-color: black;
+    color: black;
+    box-shadow: 5px 5px 5px black;
+    background-color: #FB476C;
     border-radius: 40px;
     transition: 0.4s ease;
 }
 
-.buttondiscover + .buttondiscover{
-    background-color: #1DB954;
-    color: black;
+.buttondiscover img, a {
+    display: inline;
+    vertical-align: middle;
+    
+}
+
+.buttondiscover img {
+    position: relative;
+    top: 4px;
+    width: 32px;
+    height: 32px;
+    text-align: right;
+    padding-left: 12px;
+    transform-origin: center;
+    transform: rotate(-90deg);
 }
 
 .buttondiscover:hover {
-    color: black;
-    background-color: whitesmoke;
+    color: #33EEF5;
+    background-color: white;
     transform: scale(1.02);
     transition: 0.4s ease;
 
 }
 
-.buttondiscover + .buttondiscover:hover {
-    background-color: white;
-}
 
 
 #coruscant {
