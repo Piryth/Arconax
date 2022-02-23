@@ -28,17 +28,22 @@ div img {
     box-shadow: 8px 8px 12px #020202;
 }
 
-div img a {
-    transition: all 0.2 ease;
+div a img {
+    transition: 0.2 ease;
     transform: scale(1);
 }
 
-
-
-div img:hover {
-    transition: all 0.2 ease;
+div a img:hover {
+    transition:  0.2 ease;
     transform: scale(1.05);
 }
+h1 {
+    color: #FFFFFF;
+    text-shadow:  0 0 15px #FFF, 0 0 20px #33EEF5, 0 0 30px #33EEF5;
+    margin: 6%;
+}
+
+
 
 /* div:nth-child(1) {
     grid-row: 1;

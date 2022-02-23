@@ -79,11 +79,51 @@ var cover4 = Bodies.rectangle(window.innerWidth/4-window.innerWidth/8, -100, 71,
     }
 });
 
+var cover5 = Bodies.rectangle(window.innerWidth/4+window.innerWidth/6, -160, 71, 71, {
+    render: {
+        sprite: {
+            texture: "img/covers/aric_jorgan.png",
+            xScale: 1/7,
+            yScale: 1/7
+        }
+    }
+});
+
+var cover6 = Bodies.rectangle(window.innerWidth-156, 0, 71, 71, {
+    render: {
+        sprite: {
+            texture: "img/covers/spacesalt.png",
+            xScale: 1/7,
+            yScale: 1/7
+        }
+    }
+});
+
+var cover7 = Bodies.rectangle(window.innerWidth/2+78, -450, 71, 71, {
+    render: {
+        sprite: {
+            texture: "img/covers/the_ultimate.png",
+            xScale: 1/7,
+            yScale: 1/7
+        }
+    }
+});
+
+var cover8 = Bodies.rectangle(window.innerWidth/2-58, -490, 71, 71, {
+    render: {
+        sprite: {
+            texture: "img/covers/khem_val.png",
+            xScale: 1/7,
+            yScale: 1/7
+        }
+    }
+});
+
 Body.rotate(cover3, 1);
 Body.rotate(cover4, Math.PI/6);
 
 
-Composite.add(engine.world, [ground,cover,cover2,cover3,cover4,circle]);
+Composite.add(engine.world, [ground,cover,cover2,cover3,cover4,cover5,cover6,cover7,cover8,circle]);
 
 Render.run(render);
 

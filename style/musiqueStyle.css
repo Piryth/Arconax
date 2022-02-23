@@ -10,20 +10,17 @@ main {
 }
 
 article {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4%;
+    gap: 8%;
     flex-wrap: wrap;
     flex: 1;
 }
 
 
 hgroup {
-    display: flex;
     height:42vh;
-    flex-direction: column;
-    justify-content: space-between;
     flex: 1;
 }
 
@@ -32,6 +29,13 @@ hgroup {
     height: 42vh;
     border-radius: 8px;
     box-shadow: 12px 12px 16px black;
+    transition: 0.2s ease;
+
+}
+
+#main:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
 }
 
 aside {
@@ -41,8 +45,8 @@ aside {
     justify-content: space-around;
     align-items: center;
     width: 25vw;
-    height: 80vh;
-    background-color: rgba(20, 20, 20,.4);
+    height: 75vh;
+    background-color: rgba(0, 0, 0,.2);
     margin-right: 4%;
     border-radius: 10%;    
 }
@@ -77,7 +81,7 @@ h1, h3 {
 
 h1 {
     color: #FFFFFF;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #33EEF5, 0 0 30px #33EEF5;
+    text-shadow:  0 0 15px #FFF, 0 0 20px #33EEF5, 0 0 30px #33EEF5;
 }
 
 aside h3 {

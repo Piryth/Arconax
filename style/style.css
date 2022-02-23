@@ -123,6 +123,10 @@ li a {
     margin-top: 1000px;
 }
 
+#sectionpremiere a {
+    text-decoration: none;
+}
+
 
 
 #sectionpremiere div:last-child *{
@@ -132,7 +136,7 @@ li a {
 
 #track {
     flex: 1;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 #track a {
@@ -167,6 +171,7 @@ h3 {
     font-size: 2em;
     text-align: center;
 }
+
 
 
 
@@ -215,7 +220,7 @@ h3 {
     flex: 1;
     display: block;
     box-shadow: 26px -10px 26px 10px rgba(0,0,0,1);
-    border-radius: 8px;
+    border-radius: 16px;
     transition: 0.4s ease;
 }
 
@@ -224,6 +229,8 @@ h3 {
     transform: rotateY(180deg);
     transition: 0.4s ease-in-out;
 }
+
+ 
 
 
 
