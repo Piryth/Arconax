@@ -23,10 +23,21 @@
     <nav>
         <ul>
             <li><a href="index.html">Acceuil</a></li>
-            <li><a href="musique.html">Musiques</a></li>
+            <li><a href="#.html">Musiques</a></li>
             <li><a href="">A propos</a></li>
         </ul>
     </nav>
+
+    <div class="void3"></div>
+    <div id="hamburger"><img src="img/boutons/hamburger.svg" alt="Menu"></div>
+    <div id="hmenu">
+        <img id="hamburgerclose" src="img/boutons/hamburgerclose.png" alt="" width="60" height="60">
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="#.html">Musiques</a></li>
+            <li><a href="">A propos</a></li>
+        </ul>
+    </div>
 
     <main>
         <h1>Bibliothèque des musiques</h1>
@@ -35,6 +46,30 @@
             <div>
                 <a href="pages_musiques/Aric_Jorgan.html"><img src="img/covers/aric_jorgan.png" alt=""></a>
                 <p>Aric Jorgan</p>
+            </div>
+            <div>
+                <a href="pages_musiques/The Indomitable.html"><img src="img/covers/indomitable.png" alt=""></a>
+                <p>The Indomitable</p>
+            </div>
+            <div>
+                <a href="pages_musiques/The Ultimate.html"><img src="img/covers/the_ultimate.png" alt=""></a>
+                <p>The Ultimate</p>
+            </div>
+            <div>
+                <a href="pages_musiques/The Preserver.html"><img src="img/covers/the_preserver.png" alt=""></a>
+                <p>The Preserver</p>
+            </div>
+            <div>
+                <a href="pages_musiques/N7.html"><img src="img/covers/N7.jpg" alt=""></a>
+                <p>N7</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Duros Area.html"><img src="img/covers/duros_area.png" alt=""></a>
+                <p>Duros Area</p>
+            </div>
+            <div>
+                <a href="pages_musiques/Trandoshan Chase.html"><img src="img/covers/great_hunt_ep.png" alt=""></a>
+                <p>Trandoshan Chase</p>
             </div>
             <div>
                 <a href="pages_musiques/Torchy.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
@@ -55,30 +90,6 @@
             <div>
                 <a href="pages_musiques/Skavak.html"><img src="img/covers/coruscant_ep.jpg" alt=""></a>
                 <p>Skavak</p>
-            </div>
-            <div>
-                <a href="pages_musiques/The Indomitable.html"><img src="img/covers/indomitable.png" alt=""></a>
-                <p>The Indomitable</p>
-            </div>
-            <div>
-                <a href="pages_musiques/The Ultimate.html.html"><img src="img/covers/the_ultimate.png" alt=""></a>
-                <p>The Ultimate</p>
-            </div>
-            <div>
-                <a href="pages_musiques/The Preserver.html"><img src="img/covers/the_preserver.png" alt=""></a>
-                <p>The Preserver</p>
-            </div>
-            <div>
-                <a href="pages_musiques/N7.html"><img src="img/covers/N7.jpg" alt=""></a>
-                <p>N7</p>
-            </div>
-            <div>
-                <a href="pages_musiques/Duros Area.html"><img src="img/covers/duros_area.png" alt=""></a>
-                <p>Duros Area</p>
-            </div>
-            <div>
-                <a href="pages_musiques/Trandoshan Chase.html"><img src="img/covers/great_hunt_ep.png" alt=""></a>
-                <p>Trandoshan Chase</p>
             </div>
             <div>
                 <a href="pages_musiques/Track Into the Dark Temple.html"><img src="img/covers/great_hunt_ep.png" alt=""></a>
@@ -125,7 +136,7 @@
                 <p>SpaceSalt</p>
             </div>
             <div>
-                <a href="pages_musiques/The Wise.html"><img src="img/covers/the_wise.png" alt="">/a>
+                <a href="pages_musiques/The Wise.html"><img src="img/covers/the_wise.png" alt=""></a>
                 <p>The Wise</p>
             </div>
 
@@ -134,14 +145,18 @@
     </main>
 
     <script>
-        for(i = 1; i <= 5; i++) {
-            for(j = 1; j <= 5; j++) {
-
-                    var image = document.querySelector("div:nth-child(" + i + ")");
-                    image.style.gridRow = i;
-                    image.style.gridColumn = j;
+        
+        if(!window.matchMedia("only screen and (max-width: 768px) and (orientation: portrait)").matches) {
+            for(i = 1; i <= 5; i++) {
+                for(j = 1; j <= 5; j++) {
+    
+                        var image = document.querySelector("div:nth-child(" + i + ")");
+                        image.style.gridRow = i;
+                        image.style.gridColumn = j;
+                }
             }
         }
     </script>
+    <script src="hamburger.js"></script>
 </body>
 </html>

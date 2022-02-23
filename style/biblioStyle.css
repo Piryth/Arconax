@@ -18,22 +18,23 @@ main {
     text-align: center;
 }
 
-div {
-    width: 12vw;
-}
 
-div img {
+#grille div img {
     width: 12vw;
     border-radius: 8px;
     box-shadow: 8px 8px 12px #020202;
+    
+
 }
 
-div a img {
+#grille div a img {
     transition: 0.2 ease;
     transform: scale(1);
+    display: block;
+    margin: auto;
 }
 
-div a img:hover {
+#grille div a img:hover {
     transition:  0.2 ease;
     transform: scale(1.05);
 }
@@ -43,6 +44,28 @@ h1 {
     margin: 6%;
 }
 
+@media only screen and (max-width: 768px) and (orientation: portrait)  { 
+    #grille {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15vh;
+    }
+    
+    #grille div img {
+        display: block;
+        width: 70vw;
+        align-items: center;
+        box-shadow: 32px 32px 12px #020202;
+        margin: auto;
+    }
+
+    #grille p {
+        margin-top: 32px;
+        font-size: 1.6em;
+    }
+
+}
 
 
 /* div:nth-child(1) {
