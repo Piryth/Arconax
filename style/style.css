@@ -272,13 +272,13 @@ canvas {
         overflow-y: scroll;
     }
     body {
-        background: url("../img/back_portrait.jpg");
+        background: url("../img/cb/cb_mobile.svg");
         background-size: 100%;
         background-attachment: fixed;
     }
 
     #arcologo-wrap {
-        background: linear-gradient(90deg, rgba(102,124,176,1) 0%, rgba(150,141,158,1) 56%, rgba(194,157,141,1) 100%);
+        background: linear-gradient(90deg, rgba(147,5,185,1) 0%, rgba(123,97,216,1) 46%, rgba(85,176,231,1) 84%, rgba(51,238,245,1) 100%);
         width: 250px;
         height: 250px;
     }
